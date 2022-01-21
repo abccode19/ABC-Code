@@ -89,7 +89,27 @@ text-decoration: underline;
 .credit {
   color: white; font-weight: 400; position: relative; top: -160px;
 }
-  
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  width: 50.7%;
+  position: relative; top: -52px;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: lightgreen;
+  color: black;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
@@ -108,72 +128,24 @@ position: relative; top: -150px;
   .credit {
     position: relative; top: -140px;
   }
-  button {
-
+  .topnav {
+    position: relative; top: 0px;
+    width: 72.5%;
   }
-}
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
-  
-}
+ }
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-  textarea { border-radius: 10px; border: 2px solid grey;}
-  input[type="name"],input[type="email"] { border-radius: 10px; border: 2px solid grey; }
-
-}
-
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-  textarea { height: 170px; width: 300px; border-radius: 10px; border: 2px solid grey;}
-  input[type="name"],input[type="email"] { width: 300px; height:35px; border-radius: 10px; border: 2px solid grey; }
-
-}
-
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-  textarea {height: 170px; width: 300px;  border-radius: 10px; border: 2px solid grey;}
-  input[type="name"],input[type="email"] { width: 300px; height:35px; border-radius: 10px; border: 2px solid grey; }
-
-}
-
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-  textarea { height:170px; width: 500px; border-radius: 10px; border: 2px solid grey;}
-  input[type="name"],input[type="email"] { width: 500px; height:35px; border-radius: 10px; border: 2px solid grey; }
-
-}
-
-/* Large screens ----------- */
-@media only screen 
-and (min-width : 1824px) {
-  textarea {height: 170px; width: 500px;  border-radius: 10px; border: 2px solid grey;}
-  input[type="name"],input[type="email"] { width: 500px; height:35px; border-radius: 10px; border: 2px solid grey; }
-
-}
-
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-  textarea { height: 170px; width: 300px;  border-radius: 10px; border: 2px solid grey;}
-  input[type="name"],input[type="email"] { width: 300px; height: 20px; border-radius: 10px; border: 2px solid grey; }
-
-}
 </style>
 <body bgcolor="black">
-<center>
+
+  <center>
+  <div class="topnav">
+    <a href="#">Login</a>
+    <a href="#">About</a>
+    <a href="#">Developer</a>
+    <a href="#">Contact us</a>
+  </div>
+  
+  <br><br><br> <br>
 <h1 class="header">ABC-Code</h1>
 <hr>
 <h4 class="moto">  &lt;/&gt; AnyBody Can Code &lt;/&gt;</h4>
@@ -184,7 +156,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
   If you also have any coding videos and you want to put them on our site for free then that's a right place. <br> 
   watch coding video for free and change the world with your coding. </b>
 <br>
-<button class="rainbow-button" alt="continue"> </button>
+<button class="rainbow-button" alt="Get Started "> </button>
 
 </center>
 <script>
