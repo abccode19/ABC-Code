@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<title>Document</title>
+</head>
+<style>
+
+body {
+margin: 0;
+background-color: #191919;
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: Helvetica, Sans-serif;
+}
+button {
+width: calc(25vw + 6px);
+height: calc(8vw + 6px);
+background-image: linear-gradient(90deg, #00c0ff 0%, #ffcf00 49%, #fc4f4f 80%, #00c0ff 100%);
+border-radius: 5px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-transform: uppercase;
+font-size: 3vw;
+color: white;
+font-weight: bold;
+border: 0px solid black;
+cursor: pointer;
+position: relative; top: -50px;
+}
+button:after {
+content: attr(alt);
+width: 25vw;
+height: 8vw;
+background-color: #191919;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+button:hover {
+animation: slidebg 2s linear
+infinity;
+}
+@keyframes slidebg {
+to {
+background-position: 25vw;
+}
+}
+
+.header {
+  display: inline-block;
+  font-family:cursive;
+  position: relative; top: -130px;
+  font-weight: 900;
+  font-size: 50px;
+  color: white;
+  letter-spacing: 1px;
+}
+.moto{
+  display: inline-block;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative; top: -170px;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
+  letter-spacing: 1px;
+}
+hr {
+width: 40%;
+background-color: white;
+border: 2px solid white;
+position: relative; top: -170px;
+}
+a {
+text-decoration: none;
+color: turquoise;
+}
+a:hover {
+text-decoration: underline;
+}
+
+.credit {
+  color: white; font-weight: 400; position: relative; top: -160px;
+}
+  
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  .header {
+    position: relative; top:-100px;
+  }
+  hr {
+    position: relative; top: -150px;
+    width: 72%;
+  }
+  .moto {
+font-size: 20px;
+position: relative; top: -150px;
+  }
+  .credit {
+    position: relative; top: -140px;
+  }
+  button {
+
+  }
+}
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+  
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  textarea { border-radius: 10px; border: 2px solid grey;}
+  input[type="name"],input[type="email"] { border-radius: 10px; border: 2px solid grey; }
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+  textarea { height: 170px; width: 300px; border-radius: 10px; border: 2px solid grey;}
+  input[type="name"],input[type="email"] { width: 300px; height:35px; border-radius: 10px; border: 2px solid grey; }
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+  textarea {height: 170px; width: 300px;  border-radius: 10px; border: 2px solid grey;}
+  input[type="name"],input[type="email"] { width: 300px; height:35px; border-radius: 10px; border: 2px solid grey; }
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+  textarea { height:170px; width: 500px; border-radius: 10px; border: 2px solid grey;}
+  input[type="name"],input[type="email"] { width: 500px; height:35px; border-radius: 10px; border: 2px solid grey; }
+
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+  textarea {height: 170px; width: 500px;  border-radius: 10px; border: 2px solid grey;}
+  input[type="name"],input[type="email"] { width: 500px; height:35px; border-radius: 10px; border: 2px solid grey; }
+
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  textarea { height: 170px; width: 300px;  border-radius: 10px; border: 2px solid grey;}
+  input[type="name"],input[type="email"] { width: 300px; height: 20px; border-radius: 10px; border: 2px solid grey; }
+
+}
+</style>
+<body bgcolor="black">
+<center>
+<h1 class="header">ABC-Code</h1>
+<hr>
+<h4 class="moto">  &lt;/&gt; AnyBody Can Code &lt;/&gt;</h4>
+<br>
+<b class="credit"> Powered by <a href="https://aestas24.github.io/Aestas-cyber-community/"> Aestas cyber community </a> and <a href="#"> R&L's Automation </a></b>
+<br>
+<b style="color: white; font-weight: 400; position: relative; top: -100px; line-height: 1.5;">welcome to ABC-Code, on this website you will find only coding videos. <br>
+  If you also have any coding videos and you want to put them on our site for free then that's a right place. <br> 
+  watch coding video for free and change the world with your coding. </b>
+<br>
+<button class="rainbow-button" alt="continue"> </button>
+
+</center>
+<script>
+   // Wrap every letter in a span
+var textWrapper = document.querySelector('.header');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.header .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 2250,
+    delay: (el, i) => 150 * (i+1)
+  }).add({
+    targets: '.header',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+</body>
+</html>
