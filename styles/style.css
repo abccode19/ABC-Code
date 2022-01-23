@@ -109,4 +109,31 @@
 		width:100%;
 }
 
-/
+
+/*Responsive*/
+@media only screen and (max-width:1140px){
+				#head{
+    font-size:13px;  
+   margin-left:2%;  
+   width:115px;
+ 
+}
+.img img{
+    
+    height: 40px;
+    width :40px;
+   
+}
+.btn-nav{
+				padding: 2px 5px;
+					font-size:7px;
+					margin:auto 0px;
+					width:60px;
+					margin-right:5px;
+}
+.img{  
+    margin-right:0%;    
+}	
+#search{
+				width:55px;
+}
