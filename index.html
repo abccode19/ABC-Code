@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,15 +12,8 @@
 <title>ABC-Code </title>
 </head>
 <style>
-
-body {
-margin: 0;
-background-color: #191919;
-min-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-font-family: Helvetica, Sans-serif;
+html {
+  font-family: Arial, Helvetica, sans-serif;
 }
 button {
 width: calc(25vw + 6px);
@@ -35,7 +29,7 @@ color: white;
 font-weight: bold;
 border: 0px solid black;
 cursor: pointer;
-position: relative; top: -50px;
+position: relative; top: 20px;
 }
 button:after {
 content: attr(alt);
@@ -50,6 +44,10 @@ button:hover {
 animation: slidebg 2s linear
 infinity;
 }
+
+.button_a:hover {
+text-decoration: none;
+}
 @keyframes slidebg {
 to {
 background-position: 25vw;
@@ -57,28 +55,22 @@ background-position: 25vw;
 }
 
 .header {
-  display: inline-block;
-  font-family:cursive;
-  position: relative; top: -130px;
+
+  font-family:Arial, Helvetica, sans-serif;
+  position: relative; top: -10px;
   font-weight: 900;
   font-size: 50px;
   color: white;
   letter-spacing: 1px;
 }
 .moto{
-  display: inline-block;
+ 
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  position: relative; top: -170px;
+  position: relative; top: -40px;
   font-weight: 600;
   font-size: 30px;
   color: white;
   letter-spacing: 1px;
-}
-hr {
-width: 40%;
-background-color: white;
-border: 2px solid white;
-position: relative; top: -170px;
 }
 a {
 text-decoration: none;
@@ -89,16 +81,19 @@ text-decoration: underline;
 }
 
 .credit {
-  color: white; font-weight: 400; position: relative; top: -160px;
+  color: white; font-weight: 400; position: relative; top: -50px;
 }
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  width: 50.7%;
-  position: relative; top: -52px;
+.details {
+  color: white; font-weight: 400; position: relative; top: -30px; line-height: 1.5;
 }
 
-.topnav a {
+.topnav {
+  background-color: #333;
+  position: fixed; top: 0px; left: 0%; 
+  width: 24.3%;
+}
+
+.topnav a{
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -110,6 +105,7 @@ text-decoration: underline;
 .topnav a:hover {
   background-color: lightgreen;
   color: black;
+  cursor: pointer;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -117,25 +113,24 @@ text-decoration: underline;
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
   .header {
-    position: relative; top:-90px;
+    position: relative; top:-120px;
     margin-top: 160px;
   }
-  hr {
-    position: relative; top: -140px;
-    width: 72%;
-  }
+
   .moto {
 font-size: 20px;
 position: relative; top: -140px;
   }
   .credit {
-    position: relative; top: -120px;
+    position: relative; top: -130px;
   }
   .topnav {
-    position: absolute; top: 0px; left: 55px;
+    position: fixed; top: 0px; left: 55px;
     width: 72.5%;
     vertical-align: top;
   }
+  .details { position: relative; top:-110px}
+  button { position: relative; top: -60px;}
  }
 
 </style>
@@ -145,22 +140,22 @@ position: relative; top: -140px;
   <div class="topnav">
     <a href="#">Login</a>
     <a href="about.html">About</a>
-    <a href="#">Developer</a>
+    <a href="developer.html">Developer</a>
     <a href="#">Contact us</a>
   </div>
   
   <br><br><br> <br>
 <h1 class="header">ABC-Code</h1>
-<hr>
+
 <h4 class="moto">  &lt;/&gt; AnyBody Can Code &lt;/&gt;</h4>
 <br>
 <b class="credit"> Powered by <a href="https://aestas24.github.io/Aestas-cyber-community/"> Aestas cyber community </a> and <a href="#"> R&L's Automation </a></b>
 <br><br>
-<b style="color: white; font-weight: 400; position: relative; top: -100px; line-height: 1.5;">welcome to ABC-Code, on this website you will find only coding videos. <br>
+<b class="details">welcome to ABC-Code, on this website you will find only coding videos. <br>
   If you also have any coding videos and you want to put them on our site for free then that's a right place. <br> 
   watch coding video for free and change the world with your coding. </b>
 <br>
-    <a href="home.html"> <button class="rainbow-button" alt="Get Started"> </button> </a>
+    <a href="home.html" class="button_a"> <button class="rainbow-button" alt="Get Started"> </button> </a>
 
 </center>
 <script>
