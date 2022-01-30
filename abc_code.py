@@ -4,5 +4,5 @@ app=Flask(__name__)
 def _try():
 	return '<h1>Try Successful</h1>'
 if __name__=='__main__':
-	app.run()
+	app.run(debug=False,host="0.0.0.0")
 	
