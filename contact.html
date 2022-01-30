@@ -11,7 +11,7 @@
 html {
 font-family: Arial, Helvetica, sans-serif;
 color: white;
-background-image: url('https://cdn.pixabay.com/photo/2020/06/13/17/51/milky-way-5295160_960_720.jpg');
+background-color: #191919;
 }
 .header
 {
@@ -112,6 +112,19 @@ width: 348px;
 textarea {
 width:340px ;
 }
+}
+@media screen and (orientation:landscape)
+and (min-device-width: 319px) 
+and (max-device-width: 640px) {
+img {display: none;}
+.header { position: relative; left: 20px; top: 5px;
+          font-size: 30px;
+         }
+#container { 
+position: relative; left: 60px;
+width: 500px;
+}
+
 }
 
 /* iPads (portrait) ----------- */
