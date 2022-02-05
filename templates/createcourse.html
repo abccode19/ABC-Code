@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+				 				<meta charset="UTF-8">
+				<title>Create A Course</title>
+<link rel="stylesheet" href="../static/upload.css"/><link rel="stylesheet" href="../static/style.css"/>
+        <link rel="stylesheet" href="styles/resp.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Mochiy+Pop+P+One&family=Montserrat&display=swap" rel="stylesheet">
+       
+
+
+
+        <style>
+        				#navbar{
+        				z-index:1;}
+        				@media screen and (max-width:370px){
+        				#head{
+        				font-size:13px;
+        			
+        				}
+        				#logo{
+        								width:40px;
+        								height:40px;
+        				}
+        				}
+        		@media screen and (max-width:325px){
+        			#head{
+        				font-size:12px;
+        			
+        				}
+        				#logo{
+        								width:35px;
+        								height:35px;
+        				}
+        				.label p{
+        				margin:0px 15%;}
+        		}
+        </style>
+</head>
+<body>
+				
+				<div id="navbar">
+            <div id="sidebar">
+                <div id="toggle-btn" onclick="slide()">
+                    <span ></span>
+               <span ></span>                
+             <span ></span>               
+            </div>
+            
+             <ul id="navlist">
+             				<li><a href="home.html">Home</a></li>  <hr class="line">
+                 <li><a href="https://abccode19.github.io/ABC-Code/about.html">About Us</a></li>
+                 <hr class="line">
+                 
+                 <li><a href="#"">Tutorials</a></li>  <hr class="line">
+
+                 <li><a href="#"">Our Channel</a></li>  <hr class="line">
+
+                 <li><a href="#"">Contact</a></li>  <hr class="line">
+
+                              </ul>   
+           
+        
+       </div> 
+            <div class="part2">
+            				
+            <div class="logo-head" >
+   <img id="logo" src="../static/logo.png" alt="logo">
+                   <h3 id="head">abcCode|Create A Course</h3>
+                      </div>
+                                  
+                        <div class="menu">
+      				<h2 onclick="help()" id="help">?</h2>
+      				<div class="help">
+      				<h2 class="help-txt">Help</h2><h3 onclick="help()" id="down">&lt;</h3></div>
+      </div>
+         </div>  
+
+      
+        </div>
+      <div id="how-to-upload">
+      				<p id="help-para">To upload your youtube videos allow embedding on your youtube studio and copy embeded link or copy the link and write it as <strong>www.youtube.com/embed/{rest of will be same}</strong> and  paste it here below in this form and add allowfullscreen in the link ,fill rest if the details and click on upload.  </p>
+      				<a style="color:#03d9ff;font-size:13px;font-family: 'Josefin Sans', sans-serif;text-align:center;margin:0px 25px;" href="#">Watch A tutorial</a>
+      </div>  
+				<h2 class="page-head">Create Your Course</h2>
+				<form id="upload-form" method="post">
+				<div class='cont-upload'><div class="label"><p>Title</p></div><div class="inp"><input type="text"></div></div>
+				<div class='cont-upload'><div class="label"><p>Embeded Link</p></div><div class="inp"><input type="text"></div></div>
+				<div class='cont-upload'><div class="label"><p>Programmimg Language</p></div><div class="inp"><input type="text"></div></div>
+				<div class='cont-upload'><div class="label"><p>Description</p></div><div class="inp"><textarea type="text"></textarea></div></div>
+				
+				
+				</form>
+				<script src="../static/js.js"></script>   
+</body>
+</html>
