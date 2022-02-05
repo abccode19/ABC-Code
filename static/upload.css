@@ -1,0 +1,115 @@
+body{
+				padding:0px;
+				margin: 0px;
+				/*background:#191919;*/
+}
+.menu{
+				display:flex;
+}
+#help{
+position:relative;
+border:2px solid white;
+padding:7px;
+display:none;
+				color:white;
+			margin:auto 5px;
+				margin-right:10px;
+				margin-top:8px;
+				
+				text-align:center;
+				font-family: 'Josefin Sans', sans-serif;
+					
+}
+#help:hover{
+				cursor:pointer;
+				font-size:26px;
+}
+.help{
+position:relative;
+display:flex;
+				color:white;
+				margin:auto;
+				margin-bottom:20px;
+				margin-right:10px;
+				justify-content:center;
+				text-align:center;
+				font-family: 'Josefin Sans', sans-serif;
+					
+}
+.help h3{
+display:block;
+				
+}
+#down{
+		-moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); transform: rotate(-90deg); 
+		color:white;margin:auto 5px;
+		}		
+		#down.active{
+						transform:rotate(90deg);
+		}
+#how-to-upload{
+position:fixed;
+background:#191919;
+width:100%;
+height:170px;
+top:-170px ;
+z-index:0;
+transition:0.4s;
+}
+#how-to-upload.active{
+    top:0;
+    }
+    
+#help-para{
+    margin:0px 30px;
+			color:white;	
+			font-family: 'Josefin Sans', sans-serif;
+			margin-top:70px;
+			
+}
+/*form*/
+#upload-form{			
+				margin:auto 34px;
+				border:2px solid grey;
+}
+.cont-upload{
+				display:flex;
+				margin:20px auto;
+}
+#upload-form p{
+					font-family: 'Montserrat', sans-serif;		}
+.label{
+
+justify-content:center;
+				width:50%;
+				font-size:12px;
+				margin:0px 10px;
+}
+.label p{
+				display:block;
+margin:0px 20%;
+}
+.inp {
+display:block;
+margin:auto;
+				width:50%;
+				margin-right:25px;
+				
+}
+.inp input{
+      display:block;
+      margin:auto;
+				box-sizing:border-box;
+}
+.inp textarea{
+      display:block;
+      margin:auto;
+				box-sizing:border-box;
+}
+@media screen and (max-width:350px){
+#head{
+		
+			
+}
+				
+}
